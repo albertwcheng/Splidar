@@ -41,6 +41,10 @@ inline int getReadMapFormatCode(const string& format)
 	{
 		return SAM_FORMAT;
 	}
+	else if(readMapFormat=="BAM")
+	{
+		return BAM_FORMAT;
+	}
 	else
 	{
 		cerr<<"Unknown format "<<readMapFormat<<endl;

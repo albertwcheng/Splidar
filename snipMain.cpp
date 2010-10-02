@@ -1047,14 +1047,14 @@ int snip_main(int argc,const char**argv)
 		if(argc<2)
 		{
 			printUsage(argc,argv);
-			return 1;
+			return EXIT_FAILURE;
 		}
 
 		if(argc==2)
-			return manager.call(argv[1]);
+			return (manager.call(argv[1])?EXIT_SUCCESS:EXIT_FAILURE);
 
 		if(argc>2)
-			return manager.call(argc,argv);
+			return (manager.call(argc,argv)?EXIT_SUCCESS:EXIT_FAILURE);
 
 		}catch(PyConfigFile::file_not_found& fnfException)
 		{
@@ -1082,7 +1082,7 @@ int snip_main(int argc,const char**argv)
 
 		cerr<<"<done done>"<<endl;
 
-		return 1;
+		return EXIT_SUCCESS;
 }
 
 
