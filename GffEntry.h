@@ -12,6 +12,8 @@
 #include <map>
 //#include <multimap>
 #include <vector>
+#include "sam.h"
+
 
 #define DEFAULT_ANNO_SOURCE "GffEntry"
 #define pExonOf(i) ((*i).first)
@@ -24,6 +26,7 @@
 #define USAGE_COUNTBLOCKFREQ 2
 #define MAQ_FORMAT 0
 #define SAM_FORMAT 1
+#define BAM_FORMAT 2
 
 
 inline int getReadMapFormatCode(const string& format)
@@ -1460,7 +1463,7 @@ public:
 
 		inline static int getSamStrand(int flag)
 		{
-			if(flag & 0x0010==0)
+			if((flag & 0x0010)==0)
 				return GffEntry::FORWARD;
 			else
 				return GffEntry::REVERSE;
@@ -1542,6 +1545,59 @@ public:
 
 			return true;
 		}
+		
+		
+		inline static bool readMatchFromBam(samfile_t *fp,bam1_t* b,GffEntry::SelexaMatch& match,int  minMapQuality=0,int maxMismatches=INT_MAX, bool ifReadOptFlag=true)
+		{
+			
+			
+			
+			uint32_t *cigar = bam1_cigar(b);
+			const bam1_core_t *c = &b->core;
+			int i, l;
+			if (b->core.tid < 0) return 0;
+			for (i = l = 0; i < c->n_cigar; ++i) {
+				int op = cigar[i]&0xf;
+				if (op == BAM_CMATCH || op == BAM_CDEL || op == BAM_CREF_SKIP)
+					l += cigar[i]>>4;
+			}
+			
+			//printf("%s\t%d\t%d\t%s\t%d\t%c\n", fp->header->target_name[c->tid],
+			//	   c->pos, c->pos + l, bam1_qname(b), c->qual, (c->flag&BAM_FREVERSE)? '-' : '+');
+			
+			
+			
+			match.strand=((c->flag&BAM_FREVERSE)? '-' : '+');
+			match.chr=fp->header->target_name[c->tid]; ///ref
+			match.gpos0=c->pos; 
+			match.quality=c->qual;
+			
+			if (match.quality<minMapQuality)
+				return false;
+			
+
+			match.nMismatches=0;  //update this!!!
+			//map<string,pair<char,string> > optflags;
+			//readOptFlag(optflags,fields,11);
+			//map<string,pair<char,string> >::iterator nmi=optflags.find("NM");
+			//if(nmi!=optflags.end())
+			//{
+			//	match.nMismatches=StringUtil::atoi(nmi->second.second);
+			//}
+			//
+			if(maxMismatches!=INT_MAX){
+				cerr<<"warning: mismatch not implemented for BAM reading here"<<endl;
+				
+			}
+			
+			
+			if(match.nMismatches>maxMismatches)
+				return false;
+			
+			return true;
+			
+		}
+		
 		
 
 		inline static bool readMatch(istream& is,GffEntry::SelexaMatch& match, int format)

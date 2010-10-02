@@ -1,8 +1,8 @@
 #ifndef SCANSTATISTICS_H_
 #define SCANSTATISTICS_H_
 
-#include <stlib/packages/numerical/random/poisson/PoissonPdf.h>
-#include <stlib/packages/numerical/random/poisson/PoissonCdf.h>
+#include <stlib/src/numerical/random/poisson/PoissonPdf.h>
+#include <stlib/src/numerical/random/poisson/PoissonCdf.h>
 #include <math.h>
 #include <cln/cln.h>
 #include <cln/lfloat.h>

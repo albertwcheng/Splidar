@@ -1,8 +1,8 @@
 #ifndef STRINGUTIL_H_
 #define STRINGUTIL_H_
 
-
-
+#include <stdlib.h>
+#include <string.h>
 #include <vector>
 #include <string>
 #include <map>

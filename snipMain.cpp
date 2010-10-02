@@ -966,7 +966,7 @@ void printUsage(int argc,const char**argv)
 
 int snip_main(int argc,const char**argv)
 {
-		cerr<<"[Splidar Vodka 5.1 PyPlus]"<<endl;
+		cerr<<"[Splidar Vodka 5.2 PyConfig Bam+]"<<endl;
 		cerr<<"[Built:"<<__DATE__<<" "<<__TIME__<<"]"<<endl;
 		cerr<<"called with args:"<<endl;
 		for(int iarg=0;iarg<argc;iarg++)

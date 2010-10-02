@@ -47,7 +47,7 @@ CPP_DEPS += \
 %.o: ../%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I/usr/include -I/lab/jaenisch_albert/include/python2.6/ -I/lab/jaenisch_albert/albert/include/ -O3 -Wall -c -fmessage-length=0 -Wno-reorder -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	g++ -I/usr/include -I/lab/jaenisch_albert/include/python2.6/ -I../samtools-0.1.8/ -I/lab/jaenisch_albert/albert/include/ -O3 -Wall -c -fmessage-length=0 -Wno-builtin-macro-redefined -Wno-reorder -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

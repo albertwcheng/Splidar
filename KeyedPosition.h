@@ -4,7 +4,7 @@
 #include "snipIncludes.h"
 #include "Nucleic.h"
 #include "NucleicBit.h"
-
+#include <algorithm>
 
 #define uint unsigned int
 

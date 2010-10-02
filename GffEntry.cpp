@@ -902,6 +902,24 @@ void GffEntry::Loader::loadJnxSelexaMatches(string filename,int format)
 		return;
 	}
 
+	
+	///////BAM FORMAT SUPPORT: BLOCK 1
+	samfile_t *samfp=NULL;
+	bam1_t *bamt=bam_init1();
+	
+	
+	if(format==BAM_FORMAT)
+	{
+		//close file and open as bam instead
+		fil.close();
+		if((samfp=samopen(filename.c_str(),"rb",0))==0){
+			cerr<<"Cannot open bam file "<<filename<<endl;
+			return;
+		}
+	}
+	//////////////////
+	
+	
 	map<int,GffEntry::JnxTag* > * chrJnxTags=NULL;
 	
 	int c=0;
@@ -914,8 +932,20 @@ void GffEntry::Loader::loadJnxSelexaMatches(string filename,int format)
 	GffEntry::JnxTag* jnxtag=NULL;
 	
 	
-	while(!fil.eof())
+	////BLOCK 2
+	bool readRead=true;
+	
+	
+	while(true)  //(!fil.eof())
 	{
+		
+		if(format==BAM_FORMAT && samread(samfp,bamt)<0) //if no more to read.
+			break;
+		
+		if(format!=BAM_FORMAT && fil.eof()) //if not, end of file reached, break
+			break;
+		////
+		
 		
 		GffEntry::SelexaMatchPtr sm=new GffEntry::SelexaMatch;
 		
@@ -925,8 +955,14 @@ void GffEntry::Loader::loadJnxSelexaMatches(string filename,int format)
 			cerr<<"loading JnxSelexaMatch line #"<<c<<endl;
 
 
-		bool readRead=GffEntry::SelexaMatch::readMatch(fil,*sm,format);
-
+		////BAM format support : BLOCK 3
+		
+		if(format==BAM_FORMAT)
+			readRead=GffEntry::SelexaMatch::readMatchFromBam(samfp,bamt,*sm);
+		else
+			readRead=GffEntry::SelexaMatch::readMatch(fil,*sm,format);
+		///////
+		
 
 		if(sm->chr=="")
 		{
@@ -1030,7 +1066,16 @@ void GffEntry::Loader::loadJnxSelexaMatches(string filename,int format)
 
 	//GffEntry::selexaMatchLoaded=true;
 	
-	fil.close();
+	////BAM Support BLOCK4
+	if(format==BAM_FORMAT){
+		bam_destroy1(bamt);
+		samclose(samfp);
+	}
+	else{
+		fil.close();
+	}
+	//////
+	
 
 }
 
@@ -1111,6 +1156,23 @@ void GffEntry::Loader::loadSelexaMatches(string filename,int format)
 		cerr<<"Cannot open "<<filename<<endl;
 		return;
 	}
+	
+	
+	///////BAM FORMAT SUPPORT: BLOCK 1
+	samfile_t *samfp=NULL;
+	bam1_t *bamt=bam_init1();
+	
+	
+	if(format==BAM_FORMAT)
+	{
+		//close file and open as bam instead
+		fil.close();
+		if((samfp=samopen(filename.c_str(),"rb",0))==0){
+			cerr<<"Cannot open bam file "<<filename<<endl;
+			return;
+		}
+	}
+	//////////////////
 
 	set<GffEntry::GBlockPtr> * chrBlock=NULL;
 	
@@ -1122,8 +1184,21 @@ void GffEntry::Loader::loadSelexaMatches(string filename,int format)
 	
 	int prevPos=-1;
 	
-	while(!fil.eof())
+	
+	////BLOCK 2
+	bool readRead=true;
+
+	
+	while(true)  //(!fil.eof())
 	{
+		
+		if(format==BAM_FORMAT && samread(samfp,bamt)<0) //if no more to read.
+			break;
+		
+		if(format!=BAM_FORMAT && fil.eof()) //if not, end of file reached, break
+			break;
+		////
+		
 		
 		GffEntry::SelexaMatchPtr sm=new GffEntry::SelexaMatch;
 		
@@ -1131,9 +1206,15 @@ void GffEntry::Loader::loadSelexaMatches(string filename,int format)
 		
 		//if(c%100==1)
 		//	cerr<<"loading SelexaMatch #"<<c<<endl;
-
-		bool readRead=GffEntry::SelexaMatch::readMatch(fil,*sm,format);
-
+		
+		
+		////BAM format support : BLOCK 3
+		
+		if(format==BAM_FORMAT)
+			readRead=GffEntry::SelexaMatch::readMatchFromBam(samfp,bamt,*sm);
+		else
+		   readRead=GffEntry::SelexaMatch::readMatch(fil,*sm,format);
+		///////
 
 		if(sm->chr=="")
 		{
@@ -1221,11 +1302,24 @@ void GffEntry::Loader::loadSelexaMatches(string filename,int format)
 	}
 
 	cerr<<c<<" lines of selexa matches loaded"<<endl;
-
+	
+	
+	
 	GffEntry::selexaMatchLoaded=true;
+	
+	
+	
 	//cerr<<"blindSportSelexa="<<GffEntry::
-	fil.close();
-
+	
+	////BAM Support BLOCK4
+	if(format==BAM_FORMAT){
+		bam_destroy1(bamt);
+		samclose(samfp);
+	}
+	else{
+		fil.close();
+	}
+	//////
 }
 
 

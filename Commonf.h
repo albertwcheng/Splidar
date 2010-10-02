@@ -1,5 +1,9 @@
 #ifndef COMMONF_H_
 #define COMMONF_H_
+
+
+#include <limits.h>
+#include <limits>
 #include "StringUtil.h"
 #include "Nucleic.h"
 #include <sstream>

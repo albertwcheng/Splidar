@@ -4,4 +4,4 @@
 
 USER_OBJS :=
 
-LIBS := -lpython2.6 -lcln
+LIBS := -lpython2.6 -lcln  -lz -lbam
