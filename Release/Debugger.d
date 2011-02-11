@@ -1,3 +1,3 @@
-Debugger.d Debugger.o: ../Debugger.cpp ../Debugger.h
+Debugger.d: ../Debugger.cpp ../Debugger.h
 
 ../Debugger.h:

@@ -1,0 +1,936 @@
+In file included from ../Commonf.cpp:8:
+../snipIncludes.h: In constructor 'Splidar_OpFlag::Splidar_OpFlag(const std::string&, bool, bool, std::string, std::string, bool, bool, int, int, int, int, bool)':
+../snipIncludes.h:27: warning: 'Splidar_OpFlag::eventTypeName' will be initialized after
+../snipIncludes.h:17: warning:   'bool Splidar_OpFlag::getSequence'
+../snipIncludes.h:29: warning:   when initialized here
+../snipIncludes.h:22: warning: 'Splidar_OpFlag::excelHyperLinkSuffix' will be initialized after
+../snipIncludes.h:19: warning:   'bool Splidar_OpFlag::egStringOutputCommonFlankingAsCoord'
+../snipIncludes.h:29: warning:   when initialized here
+In file included from ../snipIncludes.h:50,
+                 from ../Commonf.cpp:8:
+../GffEntry.h: In constructor 'GffEntry::Jnx::Jnx(SmartPtr<GffEntry::Exon>, SmartPtr<GffEntry::Exon>, char)':
+../GffEntry.h:623: warning: 'GffEntry::Jnx::rightExon' will be initialized after
+../GffEntry.h:619: warning:   'char GffEntry::Jnx::strand'
+../GffEntry.h:625: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Locus::Locus()':
+../GffEntry.h:1317: warning: 'GffEntry::Locus::chr' will be initialized after
+../GffEntry.h:1306: warning:   'SmartPtr<GffEntry::Exon>* GffEntry::Locus::exons'
+../GffEntry.h:1333: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::GBlock::GBlock(const std::string&, int, int)':
+../GffEntry.h:1651: warning: 'GffEntry::GBlock::usageFrequency' will be initialized after
+../GffEntry.h:1646: warning:   'int GffEntry::GBlock::umposL'
+../GffEntry.h:1886: warning:   when initialized here
+In file included from ../snipIncludes.h:53,
+                 from ../Commonf.cpp:8:
+../KeyedPosition.h: In constructor 'GenomeNmersEncoder::GenomeNmersEncoder(std::string, std::string, int, std::string, int)':
+../KeyedPosition.h:700: warning: 'GenomeNmersEncoder::outputSuffix' will be initialized after
+../KeyedPosition.h:698: warning:   'int GenomeNmersEncoder::prefixLength'
+../KeyedPosition.h:716: warning:   when initialized here
+../KeyedPosition.h:698: warning: 'GenomeNmersEncoder::prefixLength' will be initialized after
+../KeyedPosition.h:696: warning:   'std::ofstream GenomeNmersEncoder::fmap'
+../KeyedPosition.h:716: warning:   when initialized here
+In file included from ../snipIncludes.h:56,
+                 from ../Commonf.cpp:8:
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(NESuperGroup*, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:864: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:923: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(SmartPtr<NExonGroup>, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:971: warning:   when initialized here
+In file included from ../snipIncludes.h:57,
+                 from ../Commonf.cpp:8:
+../SplidarGraph.h: In constructor 'TrafficInfoAS::TrafficInfoAS()':
+../SplidarGraph.h:138: warning: 'TrafficInfoAS::JPF' will be initialized after
+../SplidarGraph.h:111: warning:   'KeyPair<int, int> TrafficInfoAS::noFlankingInfo'
+../SplidarGraph.h:146: warning:   when initialized here
+../SplidarGraph.h: In constructor 'GenericSplidarOutputFormat::GenericSplidarOutputFormat(int, GffEntry::Locus*, std::string, std::ofstream*, std::ofstream*, RandomAccessFile*, std::string, std::string, int, int, int, int)':
+../SplidarGraph.h:269: warning: 'GenericSplidarOutputFormat::eventID' will be initialized after
+../SplidarGraph.h:267: warning:   'RandomAccessFile* GenericSplidarOutputFormat::raf'
+../SplidarGraph.h:642: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:666: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:666: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, SmartPtr<NExonGroup>, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:672: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:672: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:678: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:678: warning:   when initialized here
+In file included from ../SplidarGraph.h:892,
+                 from ../snipIncludes.h:57,
+                 from ../Commonf.cpp:8:
+../AEP_Splidar.h: In constructor 'AEP_SplidarGraph_REGJ::AEP_SplidarGraph_REGJ(Splidar_OpFlag, int, int, int, int, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, std::string)':
+../AEP_Splidar.h:17: warning: 'AEP_SplidarGraph_REGJ::startGroup' will be initialized after
+../AEP_Splidar.h:26: warning:   base 'SplidarGraph'
+../AEP_Splidar.h:25: warning:   when initialized here
+../AEP_Splidar.h:19: warning: 'AEP_SplidarGraph_REGJ::isoBoundRegistry' will be initialized after
+../AEP_Splidar.h:18: warning:   'std::string AEP_SplidarGraph_REGJ::eventTypeName'
+../AEP_Splidar.h:25: warning:   when initialized here
+In file included from ../SplidarGraph.h:893,
+                 from ../snipIncludes.h:57,
+                 from ../Commonf.cpp:8:
+../A53SS_Splidar.h: In constructor 'A53SS_Splidar_REGJ::A53SS_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../A53SS_Splidar.h:89: warning: 'A53SS_Splidar_REGJ::op' will be initialized after
+../A53SS_Splidar.h:178: warning:   base 'GenericSplidarOutputFormat'
+../A53SS_Splidar.h:178: warning:   when initialized here
+In file included from ../SplidarGraph.h:894,
+                 from ../snipIncludes.h:57,
+                 from ../Commonf.cpp:8:
+../ATE_Splidar.h: In constructor 'ATE_Splidar_REGJ::ATE_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../ATE_Splidar.h:15: warning: 'ATE_Splidar_REGJ::op' will be initialized after
+../ATE_Splidar.h:18: warning:   base 'GenericSplidarOutputFormat'
+../ATE_Splidar.h:18: warning:   when initialized here
+In file included from ../SplidarGraph.h:895,
+                 from ../snipIncludes.h:57,
+                 from ../Commonf.cpp:8:
+../RI_Splidar.h: In constructor 'RI_Splidar_REG::RI_Splidar_REG(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool, bool, bool, bool, bool)':
+../RI_Splidar.h:17: warning: 'RI_Splidar_REG::op' will be initialized after
+../RI_Splidar.h:20: warning:   base 'GenericSplidarOutputFormat'
+../RI_Splidar.h:20: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = Position, K = std::vector<Position, std::allocator<Position> >, I = __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > >]':
+../KeyedPosition.h:660:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<Position, std::allocator<Position> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = KeyedPosition, K = std::vector<KeyedPosition, std::allocator<KeyedPosition> >, I = __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > >]':
+../KeyedPosition.h:765:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<KeyedPosition, std::allocator<KeyedPosition> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+In file included from ../ConservedBlock.cpp:1:
+../snipIncludes.h: In constructor 'Splidar_OpFlag::Splidar_OpFlag(const std::string&, bool, bool, std::string, std::string, bool, bool, int, int, int, int, bool)':
+../snipIncludes.h:27: warning: 'Splidar_OpFlag::eventTypeName' will be initialized after
+../snipIncludes.h:17: warning:   'bool Splidar_OpFlag::getSequence'
+../snipIncludes.h:29: warning:   when initialized here
+../snipIncludes.h:22: warning: 'Splidar_OpFlag::excelHyperLinkSuffix' will be initialized after
+../snipIncludes.h:19: warning:   'bool Splidar_OpFlag::egStringOutputCommonFlankingAsCoord'
+../snipIncludes.h:29: warning:   when initialized here
+In file included from ../snipIncludes.h:50,
+                 from ../ConservedBlock.cpp:1:
+../GffEntry.h: In constructor 'GffEntry::Jnx::Jnx(SmartPtr<GffEntry::Exon>, SmartPtr<GffEntry::Exon>, char)':
+../GffEntry.h:623: warning: 'GffEntry::Jnx::rightExon' will be initialized after
+../GffEntry.h:619: warning:   'char GffEntry::Jnx::strand'
+../GffEntry.h:625: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Locus::Locus()':
+../GffEntry.h:1317: warning: 'GffEntry::Locus::chr' will be initialized after
+../GffEntry.h:1306: warning:   'SmartPtr<GffEntry::Exon>* GffEntry::Locus::exons'
+../GffEntry.h:1333: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::GBlock::GBlock(const std::string&, int, int)':
+../GffEntry.h:1651: warning: 'GffEntry::GBlock::usageFrequency' will be initialized after
+../GffEntry.h:1646: warning:   'int GffEntry::GBlock::umposL'
+../GffEntry.h:1886: warning:   when initialized here
+In file included from ../snipIncludes.h:53,
+                 from ../ConservedBlock.cpp:1:
+../KeyedPosition.h: In constructor 'GenomeNmersEncoder::GenomeNmersEncoder(std::string, std::string, int, std::string, int)':
+../KeyedPosition.h:700: warning: 'GenomeNmersEncoder::outputSuffix' will be initialized after
+../KeyedPosition.h:698: warning:   'int GenomeNmersEncoder::prefixLength'
+../KeyedPosition.h:716: warning:   when initialized here
+../KeyedPosition.h:698: warning: 'GenomeNmersEncoder::prefixLength' will be initialized after
+../KeyedPosition.h:696: warning:   'std::ofstream GenomeNmersEncoder::fmap'
+../KeyedPosition.h:716: warning:   when initialized here
+In file included from ../snipIncludes.h:56,
+                 from ../ConservedBlock.cpp:1:
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(NESuperGroup*, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:864: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:923: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(SmartPtr<NExonGroup>, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:971: warning:   when initialized here
+In file included from ../snipIncludes.h:57,
+                 from ../ConservedBlock.cpp:1:
+../SplidarGraph.h: In constructor 'TrafficInfoAS::TrafficInfoAS()':
+../SplidarGraph.h:138: warning: 'TrafficInfoAS::JPF' will be initialized after
+../SplidarGraph.h:111: warning:   'KeyPair<int, int> TrafficInfoAS::noFlankingInfo'
+../SplidarGraph.h:146: warning:   when initialized here
+../SplidarGraph.h: In constructor 'GenericSplidarOutputFormat::GenericSplidarOutputFormat(int, GffEntry::Locus*, std::string, std::ofstream*, std::ofstream*, RandomAccessFile*, std::string, std::string, int, int, int, int)':
+../SplidarGraph.h:269: warning: 'GenericSplidarOutputFormat::eventID' will be initialized after
+../SplidarGraph.h:267: warning:   'RandomAccessFile* GenericSplidarOutputFormat::raf'
+../SplidarGraph.h:642: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:666: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:666: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, SmartPtr<NExonGroup>, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:672: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:672: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:678: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:678: warning:   when initialized here
+In file included from ../SplidarGraph.h:892,
+                 from ../snipIncludes.h:57,
+                 from ../ConservedBlock.cpp:1:
+../AEP_Splidar.h: In constructor 'AEP_SplidarGraph_REGJ::AEP_SplidarGraph_REGJ(Splidar_OpFlag, int, int, int, int, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, std::string)':
+../AEP_Splidar.h:17: warning: 'AEP_SplidarGraph_REGJ::startGroup' will be initialized after
+../AEP_Splidar.h:26: warning:   base 'SplidarGraph'
+../AEP_Splidar.h:25: warning:   when initialized here
+../AEP_Splidar.h:19: warning: 'AEP_SplidarGraph_REGJ::isoBoundRegistry' will be initialized after
+../AEP_Splidar.h:18: warning:   'std::string AEP_SplidarGraph_REGJ::eventTypeName'
+../AEP_Splidar.h:25: warning:   when initialized here
+In file included from ../SplidarGraph.h:893,
+                 from ../snipIncludes.h:57,
+                 from ../ConservedBlock.cpp:1:
+../A53SS_Splidar.h: In constructor 'A53SS_Splidar_REGJ::A53SS_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../A53SS_Splidar.h:89: warning: 'A53SS_Splidar_REGJ::op' will be initialized after
+../A53SS_Splidar.h:178: warning:   base 'GenericSplidarOutputFormat'
+../A53SS_Splidar.h:178: warning:   when initialized here
+In file included from ../SplidarGraph.h:894,
+                 from ../snipIncludes.h:57,
+                 from ../ConservedBlock.cpp:1:
+../ATE_Splidar.h: In constructor 'ATE_Splidar_REGJ::ATE_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../ATE_Splidar.h:15: warning: 'ATE_Splidar_REGJ::op' will be initialized after
+../ATE_Splidar.h:18: warning:   base 'GenericSplidarOutputFormat'
+../ATE_Splidar.h:18: warning:   when initialized here
+In file included from ../SplidarGraph.h:895,
+                 from ../snipIncludes.h:57,
+                 from ../ConservedBlock.cpp:1:
+../RI_Splidar.h: In constructor 'RI_Splidar_REG::RI_Splidar_REG(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool, bool, bool, bool, bool)':
+../RI_Splidar.h:17: warning: 'RI_Splidar_REG::op' will be initialized after
+../RI_Splidar.h:20: warning:   base 'GenericSplidarOutputFormat'
+../RI_Splidar.h:20: warning:   when initialized here
+../ConservedBlock.h: In constructor 'ConservedBlockQueue::ConservedBlockQueue(std::istream&, std::ostream&)':
+../ConservedBlock.h:60: warning: 'ConservedBlockQueue::fin' will be initialized after
+../ConservedBlock.h:59: warning:   'std::ostream& ConservedBlockQueue::fout'
+../ConservedBlock.cpp:147: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = Position, K = std::vector<Position, std::allocator<Position> >, I = __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > >]':
+../KeyedPosition.h:660:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<Position, std::allocator<Position> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = KeyedPosition, K = std::vector<KeyedPosition, std::allocator<KeyedPosition> >, I = __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > >]':
+../KeyedPosition.h:765:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<KeyedPosition, std::allocator<KeyedPosition> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+In file included from ../GffEntry.cpp:2:
+../snipIncludes.h: In constructor 'Splidar_OpFlag::Splidar_OpFlag(const std::string&, bool, bool, std::string, std::string, bool, bool, int, int, int, int, bool)':
+../snipIncludes.h:27: warning: 'Splidar_OpFlag::eventTypeName' will be initialized after
+../snipIncludes.h:17: warning:   'bool Splidar_OpFlag::getSequence'
+../snipIncludes.h:29: warning:   when initialized here
+../snipIncludes.h:22: warning: 'Splidar_OpFlag::excelHyperLinkSuffix' will be initialized after
+../snipIncludes.h:19: warning:   'bool Splidar_OpFlag::egStringOutputCommonFlankingAsCoord'
+../snipIncludes.h:29: warning:   when initialized here
+In file included from ../snipIncludes.h:50,
+                 from ../GffEntry.cpp:2:
+../GffEntry.h: In constructor 'GffEntry::Jnx::Jnx(SmartPtr<GffEntry::Exon>, SmartPtr<GffEntry::Exon>, char)':
+../GffEntry.h:623: warning: 'GffEntry::Jnx::rightExon' will be initialized after
+../GffEntry.h:619: warning:   'char GffEntry::Jnx::strand'
+../GffEntry.h:625: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Locus::Locus()':
+../GffEntry.h:1317: warning: 'GffEntry::Locus::chr' will be initialized after
+../GffEntry.h:1306: warning:   'SmartPtr<GffEntry::Exon>* GffEntry::Locus::exons'
+../GffEntry.h:1333: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::GBlock::GBlock(const std::string&, int, int)':
+../GffEntry.h:1651: warning: 'GffEntry::GBlock::usageFrequency' will be initialized after
+../GffEntry.h:1646: warning:   'int GffEntry::GBlock::umposL'
+../GffEntry.h:1886: warning:   when initialized here
+In file included from ../snipIncludes.h:53,
+                 from ../GffEntry.cpp:2:
+../KeyedPosition.h: In constructor 'GenomeNmersEncoder::GenomeNmersEncoder(std::string, std::string, int, std::string, int)':
+../KeyedPosition.h:700: warning: 'GenomeNmersEncoder::outputSuffix' will be initialized after
+../KeyedPosition.h:698: warning:   'int GenomeNmersEncoder::prefixLength'
+../KeyedPosition.h:716: warning:   when initialized here
+../KeyedPosition.h:698: warning: 'GenomeNmersEncoder::prefixLength' will be initialized after
+../KeyedPosition.h:696: warning:   'std::ofstream GenomeNmersEncoder::fmap'
+../KeyedPosition.h:716: warning:   when initialized here
+In file included from ../snipIncludes.h:56,
+                 from ../GffEntry.cpp:2:
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(NESuperGroup*, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:864: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:923: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(SmartPtr<NExonGroup>, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:971: warning:   when initialized here
+In file included from ../snipIncludes.h:57,
+                 from ../GffEntry.cpp:2:
+../SplidarGraph.h: In constructor 'TrafficInfoAS::TrafficInfoAS()':
+../SplidarGraph.h:138: warning: 'TrafficInfoAS::JPF' will be initialized after
+../SplidarGraph.h:111: warning:   'KeyPair<int, int> TrafficInfoAS::noFlankingInfo'
+../SplidarGraph.h:146: warning:   when initialized here
+../SplidarGraph.h: In constructor 'GenericSplidarOutputFormat::GenericSplidarOutputFormat(int, GffEntry::Locus*, std::string, std::ofstream*, std::ofstream*, RandomAccessFile*, std::string, std::string, int, int, int, int)':
+../SplidarGraph.h:269: warning: 'GenericSplidarOutputFormat::eventID' will be initialized after
+../SplidarGraph.h:267: warning:   'RandomAccessFile* GenericSplidarOutputFormat::raf'
+../SplidarGraph.h:642: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:666: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:666: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, SmartPtr<NExonGroup>, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:672: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:672: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:678: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:678: warning:   when initialized here
+In file included from ../SplidarGraph.h:892,
+                 from ../snipIncludes.h:57,
+                 from ../GffEntry.cpp:2:
+../AEP_Splidar.h: In constructor 'AEP_SplidarGraph_REGJ::AEP_SplidarGraph_REGJ(Splidar_OpFlag, int, int, int, int, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, std::string)':
+../AEP_Splidar.h:17: warning: 'AEP_SplidarGraph_REGJ::startGroup' will be initialized after
+../AEP_Splidar.h:26: warning:   base 'SplidarGraph'
+../AEP_Splidar.h:25: warning:   when initialized here
+../AEP_Splidar.h:19: warning: 'AEP_SplidarGraph_REGJ::isoBoundRegistry' will be initialized after
+../AEP_Splidar.h:18: warning:   'std::string AEP_SplidarGraph_REGJ::eventTypeName'
+../AEP_Splidar.h:25: warning:   when initialized here
+In file included from ../SplidarGraph.h:893,
+                 from ../snipIncludes.h:57,
+                 from ../GffEntry.cpp:2:
+../A53SS_Splidar.h: In constructor 'A53SS_Splidar_REGJ::A53SS_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../A53SS_Splidar.h:89: warning: 'A53SS_Splidar_REGJ::op' will be initialized after
+../A53SS_Splidar.h:178: warning:   base 'GenericSplidarOutputFormat'
+../A53SS_Splidar.h:178: warning:   when initialized here
+In file included from ../SplidarGraph.h:894,
+                 from ../snipIncludes.h:57,
+                 from ../GffEntry.cpp:2:
+../ATE_Splidar.h: In constructor 'ATE_Splidar_REGJ::ATE_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../ATE_Splidar.h:15: warning: 'ATE_Splidar_REGJ::op' will be initialized after
+../ATE_Splidar.h:18: warning:   base 'GenericSplidarOutputFormat'
+../ATE_Splidar.h:18: warning:   when initialized here
+In file included from ../SplidarGraph.h:895,
+                 from ../snipIncludes.h:57,
+                 from ../GffEntry.cpp:2:
+../RI_Splidar.h: In constructor 'RI_Splidar_REG::RI_Splidar_REG(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool, bool, bool, bool, bool)':
+../RI_Splidar.h:17: warning: 'RI_Splidar_REG::op' will be initialized after
+../RI_Splidar.h:20: warning:   base 'GenericSplidarOutputFormat'
+../RI_Splidar.h:20: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Exon::Exon()':
+../GffEntry.h:2165: warning: 'GffEntry::Exon::siblings' will be initialized after
+../GffEntry.h:1976: warning:   'bool GffEntry::Exon::visited'
+../GffEntry.cpp:312: warning:   when initialized here
+../GffEntry.h:2007: warning: 'GffEntry::Exon::exonGroup' will be initialized after
+../GffEntry.h:1980: warning:   'int GffEntry::Exon::maxCodingStart'
+../GffEntry.cpp:312: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Exon::Exon(std::string, int, int, int, int, int)':
+../GffEntry.h:1992: warning: 'GffEntry::Exon::blocks' will be initialized after
+../GffEntry.h:1970: warning:   'std::string GffEntry::Exon::chr'
+../GffEntry.cpp:332: warning:   when initialized here
+../GffEntry.h:2165: warning: 'GffEntry::Exon::siblings' will be initialized after
+../GffEntry.h:1978: warning:   'int GffEntry::Exon::siblingID'
+../GffEntry.cpp:332: warning:   when initialized here
+../GffEntry.h:1993: warning: 'GffEntry::Exon::outJnxs' will be initialized after
+../GffEntry.h:1977: warning:   'char GffEntry::Exon::strand'
+../GffEntry.cpp:332: warning:   when initialized here
+../GffEntry.h:1977: warning: 'GffEntry::Exon::strand' will be initialized after
+../GffEntry.h:1976: warning:   'bool GffEntry::Exon::visited'
+../GffEntry.cpp:332: warning:   when initialized here
+../GffEntry.h:2007: warning: 'GffEntry::Exon::exonGroup' will be initialized after
+../GffEntry.h:1980: warning:   'int GffEntry::Exon::maxCodingStart'
+../GffEntry.cpp:332: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = Position, K = std::vector<Position, std::allocator<Position> >, I = __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > >]':
+../KeyedPosition.h:660:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<Position, std::allocator<Position> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = KeyedPosition, K = std::vector<KeyedPosition, std::allocator<KeyedPosition> >, I = __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > >]':
+../KeyedPosition.h:765:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<KeyedPosition, std::allocator<KeyedPosition> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+In file included from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../snipIncludes.h: In constructor 'Splidar_OpFlag::Splidar_OpFlag(const std::string&, bool, bool, std::string, std::string, bool, bool, int, int, int, int, bool)':
+../snipIncludes.h:27: warning: 'Splidar_OpFlag::eventTypeName' will be initialized after
+../snipIncludes.h:17: warning:   'bool Splidar_OpFlag::getSequence'
+../snipIncludes.h:29: warning:   when initialized here
+../snipIncludes.h:22: warning: 'Splidar_OpFlag::excelHyperLinkSuffix' will be initialized after
+../snipIncludes.h:19: warning:   'bool Splidar_OpFlag::egStringOutputCommonFlankingAsCoord'
+../snipIncludes.h:29: warning:   when initialized here
+In file included from ../snipIncludes.h:50,
+                 from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../GffEntry.h: In constructor 'GffEntry::Jnx::Jnx(SmartPtr<GffEntry::Exon>, SmartPtr<GffEntry::Exon>, char)':
+../GffEntry.h:623: warning: 'GffEntry::Jnx::rightExon' will be initialized after
+../GffEntry.h:619: warning:   'char GffEntry::Jnx::strand'
+../GffEntry.h:625: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Locus::Locus()':
+../GffEntry.h:1317: warning: 'GffEntry::Locus::chr' will be initialized after
+../GffEntry.h:1306: warning:   'SmartPtr<GffEntry::Exon>* GffEntry::Locus::exons'
+../GffEntry.h:1333: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::GBlock::GBlock(const std::string&, int, int)':
+../GffEntry.h:1651: warning: 'GffEntry::GBlock::usageFrequency' will be initialized after
+../GffEntry.h:1646: warning:   'int GffEntry::GBlock::umposL'
+../GffEntry.h:1886: warning:   when initialized here
+In file included from ../snipIncludes.h:53,
+                 from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../KeyedPosition.h: In constructor 'GenomeNmersEncoder::GenomeNmersEncoder(std::string, std::string, int, std::string, int)':
+../KeyedPosition.h:700: warning: 'GenomeNmersEncoder::outputSuffix' will be initialized after
+../KeyedPosition.h:698: warning:   'int GenomeNmersEncoder::prefixLength'
+../KeyedPosition.h:716: warning:   when initialized here
+../KeyedPosition.h:698: warning: 'GenomeNmersEncoder::prefixLength' will be initialized after
+../KeyedPosition.h:696: warning:   'std::ofstream GenomeNmersEncoder::fmap'
+../KeyedPosition.h:716: warning:   when initialized here
+In file included from ../snipIncludes.h:56,
+                 from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(NESuperGroup*, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:864: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:923: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(SmartPtr<NExonGroup>, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:971: warning:   when initialized here
+In file included from ../snipIncludes.h:57,
+                 from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../SplidarGraph.h: In constructor 'TrafficInfoAS::TrafficInfoAS()':
+../SplidarGraph.h:138: warning: 'TrafficInfoAS::JPF' will be initialized after
+../SplidarGraph.h:111: warning:   'KeyPair<int, int> TrafficInfoAS::noFlankingInfo'
+../SplidarGraph.h:146: warning:   when initialized here
+../SplidarGraph.h: In constructor 'GenericSplidarOutputFormat::GenericSplidarOutputFormat(int, GffEntry::Locus*, std::string, std::ofstream*, std::ofstream*, RandomAccessFile*, std::string, std::string, int, int, int, int)':
+../SplidarGraph.h:269: warning: 'GenericSplidarOutputFormat::eventID' will be initialized after
+../SplidarGraph.h:267: warning:   'RandomAccessFile* GenericSplidarOutputFormat::raf'
+../SplidarGraph.h:642: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:666: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:666: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, SmartPtr<NExonGroup>, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:672: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:672: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:678: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:678: warning:   when initialized here
+In file included from ../SplidarGraph.h:892,
+                 from ../snipIncludes.h:57,
+                 from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../AEP_Splidar.h: In constructor 'AEP_SplidarGraph_REGJ::AEP_SplidarGraph_REGJ(Splidar_OpFlag, int, int, int, int, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, std::string)':
+../AEP_Splidar.h:17: warning: 'AEP_SplidarGraph_REGJ::startGroup' will be initialized after
+../AEP_Splidar.h:26: warning:   base 'SplidarGraph'
+../AEP_Splidar.h:25: warning:   when initialized here
+../AEP_Splidar.h:19: warning: 'AEP_SplidarGraph_REGJ::isoBoundRegistry' will be initialized after
+../AEP_Splidar.h:18: warning:   'std::string AEP_SplidarGraph_REGJ::eventTypeName'
+../AEP_Splidar.h:25: warning:   when initialized here
+In file included from ../SplidarGraph.h:893,
+                 from ../snipIncludes.h:57,
+                 from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../A53SS_Splidar.h: In constructor 'A53SS_Splidar_REGJ::A53SS_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../A53SS_Splidar.h:89: warning: 'A53SS_Splidar_REGJ::op' will be initialized after
+../A53SS_Splidar.h:178: warning:   base 'GenericSplidarOutputFormat'
+../A53SS_Splidar.h:178: warning:   when initialized here
+In file included from ../SplidarGraph.h:894,
+                 from ../snipIncludes.h:57,
+                 from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../ATE_Splidar.h: In constructor 'ATE_Splidar_REGJ::ATE_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../ATE_Splidar.h:15: warning: 'ATE_Splidar_REGJ::op' will be initialized after
+../ATE_Splidar.h:18: warning:   base 'GenericSplidarOutputFormat'
+../ATE_Splidar.h:18: warning:   when initialized here
+In file included from ../SplidarGraph.h:895,
+                 from ../snipIncludes.h:57,
+                 from ../SpliceMMGraph.h:12,
+                 from ../SpliceMMGraph.cpp:8:
+../RI_Splidar.h: In constructor 'RI_Splidar_REG::RI_Splidar_REG(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool, bool, bool, bool, bool)':
+../RI_Splidar.h:17: warning: 'RI_Splidar_REG::op' will be initialized after
+../RI_Splidar.h:20: warning:   base 'GenericSplidarOutputFormat'
+../RI_Splidar.h:20: warning:   when initialized here
+In file included from ../SpliceMMGraph.cpp:8:
+../SpliceMMGraph.h: In constructor 'DenObj::DenObj()':
+../SpliceMMGraph.h:61: warning: 'DenObj::lefts' will be initialized after
+../SpliceMMGraph.h:60: warning:   'std::set<SmartPtr<DenObj>, std::less<SmartPtr<DenObj> >, std::allocator<SmartPtr<DenObj> > >* DenObj::rights'
+../SpliceMMGraph.h:76: warning:   when initialized here
+../SpliceMMGraph.h: In constructor 'DenObj::DenObj(SmartPtr<GffEntry::GBlock>)':
+../SpliceMMGraph.h:61: warning: 'DenObj::lefts' will be initialized after
+../SpliceMMGraph.h:60: warning:   'std::set<SmartPtr<DenObj>, std::less<SmartPtr<DenObj> >, std::allocator<SmartPtr<DenObj> > >* DenObj::rights'
+../SpliceMMGraph.h:77: warning:   when initialized here
+../SpliceMMGraph.h: In constructor 'DenObj::DenObj(SmartPtr<GffEntry::JnxTagSet>)':
+../SpliceMMGraph.h:61: warning: 'DenObj::lefts' will be initialized after
+../SpliceMMGraph.h:60: warning:   'std::set<SmartPtr<DenObj>, std::less<SmartPtr<DenObj> >, std::allocator<SmartPtr<DenObj> > >* DenObj::rights'
+../SpliceMMGraph.h:78: warning:   when initialized here
+../SpliceMMGraph.h: In constructor 'DenGraph::DenGraph(GffEntry::Locus*, int)':
+../SpliceMMGraph.h:351: warning: 'DenGraph::tstrand' will be initialized after
+../SpliceMMGraph.h:343: warning:   'int DenGraph::traversalKey'
+../SpliceMMGraph.h:454: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = Position, K = std::vector<Position, std::allocator<Position> >, I = __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > >]':
+../KeyedPosition.h:660:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<Position, std::allocator<Position> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = KeyedPosition, K = std::vector<KeyedPosition, std::allocator<KeyedPosition> >, I = __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > >]':
+../KeyedPosition.h:765:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<KeyedPosition, std::allocator<KeyedPosition> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+In file included from ../SplidarGraph.h:4,
+                 from ../SplidarGraph.cpp:1:
+../snipIncludes.h: In constructor 'Splidar_OpFlag::Splidar_OpFlag(const std::string&, bool, bool, std::string, std::string, bool, bool, int, int, int, int, bool)':
+../snipIncludes.h:27: warning: 'Splidar_OpFlag::eventTypeName' will be initialized after
+../snipIncludes.h:17: warning:   'bool Splidar_OpFlag::getSequence'
+../snipIncludes.h:29: warning:   when initialized here
+../snipIncludes.h:22: warning: 'Splidar_OpFlag::excelHyperLinkSuffix' will be initialized after
+../snipIncludes.h:19: warning:   'bool Splidar_OpFlag::egStringOutputCommonFlankingAsCoord'
+../snipIncludes.h:29: warning:   when initialized here
+In file included from ../snipIncludes.h:50,
+                 from ../SplidarGraph.h:4,
+                 from ../SplidarGraph.cpp:1:
+../GffEntry.h: In constructor 'GffEntry::Jnx::Jnx(SmartPtr<GffEntry::Exon>, SmartPtr<GffEntry::Exon>, char)':
+../GffEntry.h:623: warning: 'GffEntry::Jnx::rightExon' will be initialized after
+../GffEntry.h:619: warning:   'char GffEntry::Jnx::strand'
+../GffEntry.h:625: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Locus::Locus()':
+../GffEntry.h:1317: warning: 'GffEntry::Locus::chr' will be initialized after
+../GffEntry.h:1306: warning:   'SmartPtr<GffEntry::Exon>* GffEntry::Locus::exons'
+../GffEntry.h:1333: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::GBlock::GBlock(const std::string&, int, int)':
+../GffEntry.h:1651: warning: 'GffEntry::GBlock::usageFrequency' will be initialized after
+../GffEntry.h:1646: warning:   'int GffEntry::GBlock::umposL'
+../GffEntry.h:1886: warning:   when initialized here
+In file included from ../snipIncludes.h:53,
+                 from ../SplidarGraph.h:4,
+                 from ../SplidarGraph.cpp:1:
+../KeyedPosition.h: In constructor 'GenomeNmersEncoder::GenomeNmersEncoder(std::string, std::string, int, std::string, int)':
+../KeyedPosition.h:700: warning: 'GenomeNmersEncoder::outputSuffix' will be initialized after
+../KeyedPosition.h:698: warning:   'int GenomeNmersEncoder::prefixLength'
+../KeyedPosition.h:716: warning:   when initialized here
+../KeyedPosition.h:698: warning: 'GenomeNmersEncoder::prefixLength' will be initialized after
+../KeyedPosition.h:696: warning:   'std::ofstream GenomeNmersEncoder::fmap'
+../KeyedPosition.h:716: warning:   when initialized here
+In file included from ../snipIncludes.h:56,
+                 from ../SplidarGraph.h:4,
+                 from ../SplidarGraph.cpp:1:
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(NESuperGroup*, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:864: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:923: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(SmartPtr<NExonGroup>, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:971: warning:   when initialized here
+In file included from ../SplidarGraph.cpp:1:
+../SplidarGraph.h: In constructor 'TrafficInfoAS::TrafficInfoAS()':
+../SplidarGraph.h:138: warning: 'TrafficInfoAS::JPF' will be initialized after
+../SplidarGraph.h:111: warning:   'KeyPair<int, int> TrafficInfoAS::noFlankingInfo'
+../SplidarGraph.h:146: warning:   when initialized here
+../SplidarGraph.h: In constructor 'GenericSplidarOutputFormat::GenericSplidarOutputFormat(int, GffEntry::Locus*, std::string, std::ofstream*, std::ofstream*, RandomAccessFile*, std::string, std::string, int, int, int, int)':
+../SplidarGraph.h:269: warning: 'GenericSplidarOutputFormat::eventID' will be initialized after
+../SplidarGraph.h:267: warning:   'RandomAccessFile* GenericSplidarOutputFormat::raf'
+../SplidarGraph.h:642: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:666: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:666: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, SmartPtr<NExonGroup>, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:672: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:672: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:678: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:678: warning:   when initialized here
+In file included from ../SplidarGraph.h:892,
+                 from ../SplidarGraph.cpp:1:
+../AEP_Splidar.h: In constructor 'AEP_SplidarGraph_REGJ::AEP_SplidarGraph_REGJ(Splidar_OpFlag, int, int, int, int, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, std::string)':
+../AEP_Splidar.h:17: warning: 'AEP_SplidarGraph_REGJ::startGroup' will be initialized after
+../AEP_Splidar.h:26: warning:   base 'SplidarGraph'
+../AEP_Splidar.h:25: warning:   when initialized here
+../AEP_Splidar.h:19: warning: 'AEP_SplidarGraph_REGJ::isoBoundRegistry' will be initialized after
+../AEP_Splidar.h:18: warning:   'std::string AEP_SplidarGraph_REGJ::eventTypeName'
+../AEP_Splidar.h:25: warning:   when initialized here
+In file included from ../SplidarGraph.h:893,
+                 from ../SplidarGraph.cpp:1:
+../A53SS_Splidar.h: In constructor 'A53SS_Splidar_REGJ::A53SS_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../A53SS_Splidar.h:89: warning: 'A53SS_Splidar_REGJ::op' will be initialized after
+../A53SS_Splidar.h:178: warning:   base 'GenericSplidarOutputFormat'
+../A53SS_Splidar.h:178: warning:   when initialized here
+In file included from ../SplidarGraph.h:894,
+                 from ../SplidarGraph.cpp:1:
+../ATE_Splidar.h: In constructor 'ATE_Splidar_REGJ::ATE_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../ATE_Splidar.h:15: warning: 'ATE_Splidar_REGJ::op' will be initialized after
+../ATE_Splidar.h:18: warning:   base 'GenericSplidarOutputFormat'
+../ATE_Splidar.h:18: warning:   when initialized here
+In file included from ../SplidarGraph.h:895,
+                 from ../SplidarGraph.cpp:1:
+../RI_Splidar.h: In constructor 'RI_Splidar_REG::RI_Splidar_REG(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool, bool, bool, bool, bool)':
+../RI_Splidar.h:17: warning: 'RI_Splidar_REG::op' will be initialized after
+../RI_Splidar.h:20: warning:   base 'GenericSplidarOutputFormat'
+../RI_Splidar.h:20: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = Position, K = std::vector<Position, std::allocator<Position> >, I = __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > >]':
+../KeyedPosition.h:660:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<Position, std::allocator<Position> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = KeyedPosition, K = std::vector<KeyedPosition, std::allocator<KeyedPosition> >, I = __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > >]':
+../KeyedPosition.h:765:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<KeyedPosition, std::allocator<KeyedPosition> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+In file included from ../snip.cpp:1:
+../snipIncludes.h: In constructor 'Splidar_OpFlag::Splidar_OpFlag(const std::string&, bool, bool, std::string, std::string, bool, bool, int, int, int, int, bool)':
+../snipIncludes.h:27: warning: 'Splidar_OpFlag::eventTypeName' will be initialized after
+../snipIncludes.h:17: warning:   'bool Splidar_OpFlag::getSequence'
+../snipIncludes.h:29: warning:   when initialized here
+../snipIncludes.h:22: warning: 'Splidar_OpFlag::excelHyperLinkSuffix' will be initialized after
+../snipIncludes.h:19: warning:   'bool Splidar_OpFlag::egStringOutputCommonFlankingAsCoord'
+../snipIncludes.h:29: warning:   when initialized here
+In file included from ../snipIncludes.h:50,
+                 from ../snip.cpp:1:
+../GffEntry.h: In constructor 'GffEntry::Jnx::Jnx(SmartPtr<GffEntry::Exon>, SmartPtr<GffEntry::Exon>, char)':
+../GffEntry.h:623: warning: 'GffEntry::Jnx::rightExon' will be initialized after
+../GffEntry.h:619: warning:   'char GffEntry::Jnx::strand'
+../GffEntry.h:625: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Locus::Locus()':
+../GffEntry.h:1317: warning: 'GffEntry::Locus::chr' will be initialized after
+../GffEntry.h:1306: warning:   'SmartPtr<GffEntry::Exon>* GffEntry::Locus::exons'
+../GffEntry.h:1333: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::GBlock::GBlock(const std::string&, int, int)':
+../GffEntry.h:1651: warning: 'GffEntry::GBlock::usageFrequency' will be initialized after
+../GffEntry.h:1646: warning:   'int GffEntry::GBlock::umposL'
+../GffEntry.h:1886: warning:   when initialized here
+In file included from ../snipIncludes.h:53,
+                 from ../snip.cpp:1:
+../KeyedPosition.h: In constructor 'GenomeNmersEncoder::GenomeNmersEncoder(std::string, std::string, int, std::string, int)':
+../KeyedPosition.h:700: warning: 'GenomeNmersEncoder::outputSuffix' will be initialized after
+../KeyedPosition.h:698: warning:   'int GenomeNmersEncoder::prefixLength'
+../KeyedPosition.h:716: warning:   when initialized here
+../KeyedPosition.h:698: warning: 'GenomeNmersEncoder::prefixLength' will be initialized after
+../KeyedPosition.h:696: warning:   'std::ofstream GenomeNmersEncoder::fmap'
+../KeyedPosition.h:716: warning:   when initialized here
+In file included from ../snipIncludes.h:56,
+                 from ../snip.cpp:1:
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(NESuperGroup*, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:864: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:923: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(SmartPtr<NExonGroup>, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:971: warning:   when initialized here
+In file included from ../snipIncludes.h:57,
+                 from ../snip.cpp:1:
+../SplidarGraph.h: In constructor 'TrafficInfoAS::TrafficInfoAS()':
+../SplidarGraph.h:138: warning: 'TrafficInfoAS::JPF' will be initialized after
+../SplidarGraph.h:111: warning:   'KeyPair<int, int> TrafficInfoAS::noFlankingInfo'
+../SplidarGraph.h:146: warning:   when initialized here
+../SplidarGraph.h: In constructor 'GenericSplidarOutputFormat::GenericSplidarOutputFormat(int, GffEntry::Locus*, std::string, std::ofstream*, std::ofstream*, RandomAccessFile*, std::string, std::string, int, int, int, int)':
+../SplidarGraph.h:269: warning: 'GenericSplidarOutputFormat::eventID' will be initialized after
+../SplidarGraph.h:267: warning:   'RandomAccessFile* GenericSplidarOutputFormat::raf'
+../SplidarGraph.h:642: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:666: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:666: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, SmartPtr<NExonGroup>, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:672: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:672: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:678: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:678: warning:   when initialized here
+In file included from ../SplidarGraph.h:892,
+                 from ../snipIncludes.h:57,
+                 from ../snip.cpp:1:
+../AEP_Splidar.h: In constructor 'AEP_SplidarGraph_REGJ::AEP_SplidarGraph_REGJ(Splidar_OpFlag, int, int, int, int, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, std::string)':
+../AEP_Splidar.h:17: warning: 'AEP_SplidarGraph_REGJ::startGroup' will be initialized after
+../AEP_Splidar.h:26: warning:   base 'SplidarGraph'
+../AEP_Splidar.h:25: warning:   when initialized here
+../AEP_Splidar.h:19: warning: 'AEP_SplidarGraph_REGJ::isoBoundRegistry' will be initialized after
+../AEP_Splidar.h:18: warning:   'std::string AEP_SplidarGraph_REGJ::eventTypeName'
+../AEP_Splidar.h:25: warning:   when initialized here
+In file included from ../SplidarGraph.h:893,
+                 from ../snipIncludes.h:57,
+                 from ../snip.cpp:1:
+../A53SS_Splidar.h: In constructor 'A53SS_Splidar_REGJ::A53SS_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../A53SS_Splidar.h:89: warning: 'A53SS_Splidar_REGJ::op' will be initialized after
+../A53SS_Splidar.h:178: warning:   base 'GenericSplidarOutputFormat'
+../A53SS_Splidar.h:178: warning:   when initialized here
+In file included from ../SplidarGraph.h:894,
+                 from ../snipIncludes.h:57,
+                 from ../snip.cpp:1:
+../ATE_Splidar.h: In constructor 'ATE_Splidar_REGJ::ATE_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../ATE_Splidar.h:15: warning: 'ATE_Splidar_REGJ::op' will be initialized after
+../ATE_Splidar.h:18: warning:   base 'GenericSplidarOutputFormat'
+../ATE_Splidar.h:18: warning:   when initialized here
+In file included from ../SplidarGraph.h:895,
+                 from ../snipIncludes.h:57,
+                 from ../snip.cpp:1:
+../RI_Splidar.h: In constructor 'RI_Splidar_REG::RI_Splidar_REG(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool, bool, bool, bool, bool)':
+../RI_Splidar.h:17: warning: 'RI_Splidar_REG::op' will be initialized after
+../RI_Splidar.h:20: warning:   base 'GenericSplidarOutputFormat'
+../RI_Splidar.h:20: warning:   when initialized here
+../snip.cpp: In constructor 'rj_state::rj_state(char, int, int, int, std::string)':
+../snip.cpp:62: warning: 'rj_state::strand' will be initialized after
+../snip.cpp:61: warning:   'int rj_state::gBound'
+../snip.cpp:98: warning:   when initialized here
+../snip.cpp:61: warning: 'rj_state::gBound' will be initialized after
+../snip.cpp:56: warning:   'int rj_state::curExon'
+../snip.cpp:98: warning:   when initialized here
+../snip.cpp:60: warning: 'rj_state::extra' will be initialized after
+../snip.cpp:55: warning:   'bool rj_state::used'
+../snip.cpp:98: warning:   when initialized here
+../snip.cpp: In constructor 'Keylet2::Keylet2(int, int, const KeyPair<int, int>&, const std::vector<KeyPair<int, int>, std::allocator<KeyPair<int, int> > >&)':
+../snip.cpp:1958: warning: 'Keylet2::gDown' will be initialized after
+../snip.cpp:1954: warning:   'KeyPair<int, int> Keylet2::leftBlock'
+../snip.cpp:1959: warning:   when initialized here
+../snip.cpp: In constructor 'OverlapState::OverlapState(int, int, int, int, int, bool)':
+../snip.cpp:2256: warning: 'OverlapState::active' will be initialized after
+../snip.cpp:2252: warning:   'int OverlapState::end0'
+../snip.cpp:2298: warning:   when initialized here
+../snip.cpp:2254: warning: 'OverlapState::startOffLength' will be initialized after
+../snip.cpp:2253: warning:   'int OverlapState::endExon'
+../snip.cpp:2298: warning:   when initialized here
+../snip.cpp: In constructor 'JnxRow::JnxRow(const Keylet2*, const std::vector<gjk_path*, std::allocator<gjk_path*> >*, int)':
+../snip.cpp:2389: warning: 'JnxRow::outBound' will be initialized after
+../snip.cpp:2384: warning:   'const Keylet2* JnxRow::keylet'
+../snip.cpp:2634: warning:   when initialized here
+../snip.cpp: In constructor 'getGBlockState::EarlyExons::EarlyExons(int, const std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >&)':
+../snip.cpp:3664: warning: 'getGBlockState::EarlyExons::end0' will be initialized after
+../snip.cpp:3663: warning:   'std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > > getGBlockState::EarlyExons::dIterator'
+../snip.cpp:3666: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = Position, K = std::vector<Position, std::allocator<Position> >, I = __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > >]':
+../KeyedPosition.h:660:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<Position, std::allocator<Position> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = KeyedPosition, K = std::vector<KeyedPosition, std::allocator<KeyedPosition> >, I = __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > >]':
+../KeyedPosition.h:765:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<KeyedPosition, std::allocator<KeyedPosition> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = SimSeqInfo, K = std::vector<SimSeqInfo, std::allocator<SimSeqInfo> >, I = __gnu_cxx::__normal_iterator<SimSeqInfo*, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> > >]':
+../snip.cpp:7287:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<SimSeqInfo, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> >, __gnu_cxx::__normal_iterator<SimSeqInfo*, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<SimSeqInfo, std::allocator<SimSeqInfo> > buffered_ofstream<SimSeqInfo, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> >, __gnu_cxx::__normal_iterator<SimSeqInfo*, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<SimSeqInfo, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> >, __gnu_cxx::__normal_iterator<SimSeqInfo*, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<SimSeqInfo, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> >, __gnu_cxx::__normal_iterator<SimSeqInfo*, std::vector<SimSeqInfo, std::allocator<SimSeqInfo> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+In file included from ../snipMain.cpp:7:
+../snipIncludes.h: In constructor 'Splidar_OpFlag::Splidar_OpFlag(const std::string&, bool, bool, std::string, std::string, bool, bool, int, int, int, int, bool)':
+../snipIncludes.h:27: warning: 'Splidar_OpFlag::eventTypeName' will be initialized after
+../snipIncludes.h:17: warning:   'bool Splidar_OpFlag::getSequence'
+../snipIncludes.h:29: warning:   when initialized here
+../snipIncludes.h:22: warning: 'Splidar_OpFlag::excelHyperLinkSuffix' will be initialized after
+../snipIncludes.h:19: warning:   'bool Splidar_OpFlag::egStringOutputCommonFlankingAsCoord'
+../snipIncludes.h:29: warning:   when initialized here
+In file included from ../snipIncludes.h:50,
+                 from ../snipMain.cpp:7:
+../GffEntry.h: In constructor 'GffEntry::Jnx::Jnx(SmartPtr<GffEntry::Exon>, SmartPtr<GffEntry::Exon>, char)':
+../GffEntry.h:623: warning: 'GffEntry::Jnx::rightExon' will be initialized after
+../GffEntry.h:619: warning:   'char GffEntry::Jnx::strand'
+../GffEntry.h:625: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::Locus::Locus()':
+../GffEntry.h:1317: warning: 'GffEntry::Locus::chr' will be initialized after
+../GffEntry.h:1306: warning:   'SmartPtr<GffEntry::Exon>* GffEntry::Locus::exons'
+../GffEntry.h:1333: warning:   when initialized here
+../GffEntry.h: In constructor 'GffEntry::GBlock::GBlock(const std::string&, int, int)':
+../GffEntry.h:1651: warning: 'GffEntry::GBlock::usageFrequency' will be initialized after
+../GffEntry.h:1646: warning:   'int GffEntry::GBlock::umposL'
+../GffEntry.h:1886: warning:   when initialized here
+In file included from ../snipIncludes.h:53,
+                 from ../snipMain.cpp:7:
+../KeyedPosition.h: In constructor 'GenomeNmersEncoder::GenomeNmersEncoder(std::string, std::string, int, std::string, int)':
+../KeyedPosition.h:700: warning: 'GenomeNmersEncoder::outputSuffix' will be initialized after
+../KeyedPosition.h:698: warning:   'int GenomeNmersEncoder::prefixLength'
+../KeyedPosition.h:716: warning:   when initialized here
+../KeyedPosition.h:698: warning: 'GenomeNmersEncoder::prefixLength' will be initialized after
+../KeyedPosition.h:696: warning:   'std::ofstream GenomeNmersEncoder::fmap'
+../KeyedPosition.h:716: warning:   when initialized here
+In file included from ../snipIncludes.h:56,
+                 from ../snipMain.cpp:7:
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(NESuperGroup*, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:864: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:923: warning:   when initialized here
+../SpliceGraph.h: In constructor 'SpliceTraversalGraph::SpliceTraversalGraph(SmartPtr<NExonGroup>, std::string, bool, int)':
+../SpliceGraph.h:566: warning: 'SpliceTraversalGraph::curStep' will be initialized after
+../SpliceGraph.h:531: warning:   'std::string SpliceTraversalGraph::locusName'
+../SpliceGraph.h:971: warning:   when initialized here
+In file included from ../snipIncludes.h:57,
+                 from ../snipMain.cpp:7:
+../SplidarGraph.h: In constructor 'TrafficInfoAS::TrafficInfoAS()':
+../SplidarGraph.h:138: warning: 'TrafficInfoAS::JPF' will be initialized after
+../SplidarGraph.h:111: warning:   'KeyPair<int, int> TrafficInfoAS::noFlankingInfo'
+../SplidarGraph.h:146: warning:   when initialized here
+../SplidarGraph.h: In constructor 'GenericSplidarOutputFormat::GenericSplidarOutputFormat(int, GffEntry::Locus*, std::string, std::ofstream*, std::ofstream*, RandomAccessFile*, std::string, std::string, int, int, int, int)':
+../SplidarGraph.h:269: warning: 'GenericSplidarOutputFormat::eventID' will be initialized after
+../SplidarGraph.h:267: warning:   'RandomAccessFile* GenericSplidarOutputFormat::raf'
+../SplidarGraph.h:642: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:666: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:666: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, SmartPtr<NExonGroup>, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:672: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:672: warning:   when initialized here
+../SplidarGraph.h: In constructor 'SplidarGraph::SplidarGraph(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, std::pair<std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > >, std::_Rb_tree_iterator<std::pair<const int, SmartPtr<GffEntry::Exon> > > >, GffEntry::Locus*, std::string, bool, int, int)':
+../SplidarGraph.h:661: warning: 'SplidarGraph::op' will be initialized after
+../SplidarGraph.h:678: warning:   base 'SpliceTraversalGraph'
+../SplidarGraph.h:678: warning:   when initialized here
+In file included from ../SplidarGraph.h:892,
+                 from ../snipIncludes.h:57,
+                 from ../snipMain.cpp:7:
+../AEP_Splidar.h: In constructor 'AEP_SplidarGraph_REGJ::AEP_SplidarGraph_REGJ(Splidar_OpFlag, int, int, int, int, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, bool, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, std::string)':
+../AEP_Splidar.h:17: warning: 'AEP_SplidarGraph_REGJ::startGroup' will be initialized after
+../AEP_Splidar.h:26: warning:   base 'SplidarGraph'
+../AEP_Splidar.h:25: warning:   when initialized here
+../AEP_Splidar.h:19: warning: 'AEP_SplidarGraph_REGJ::isoBoundRegistry' will be initialized after
+../AEP_Splidar.h:18: warning:   'std::string AEP_SplidarGraph_REGJ::eventTypeName'
+../AEP_Splidar.h:25: warning:   when initialized here
+In file included from ../SplidarGraph.h:893,
+                 from ../snipIncludes.h:57,
+                 from ../snipMain.cpp:7:
+../A53SS_Splidar.h: In constructor 'A53SS_Splidar_REGJ::A53SS_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, NESuperGroupPtr, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../A53SS_Splidar.h:89: warning: 'A53SS_Splidar_REGJ::op' will be initialized after
+../A53SS_Splidar.h:178: warning:   base 'GenericSplidarOutputFormat'
+../A53SS_Splidar.h:178: warning:   when initialized here
+In file included from ../SplidarGraph.h:894,
+                 from ../snipIncludes.h:57,
+                 from ../snipMain.cpp:7:
+../ATE_Splidar.h: In constructor 'ATE_Splidar_REGJ::ATE_Splidar_REGJ(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)':
+../ATE_Splidar.h:15: warning: 'ATE_Splidar_REGJ::op' will be initialized after
+../ATE_Splidar.h:18: warning:   base 'GenericSplidarOutputFormat'
+../ATE_Splidar.h:18: warning:   when initialized here
+In file included from ../SplidarGraph.h:895,
+                 from ../snipIncludes.h:57,
+                 from ../snipMain.cpp:7:
+../RI_Splidar.h: In constructor 'RI_Splidar_REG::RI_Splidar_REG(Splidar_OpFlag, std::ofstream*, std::ofstream*, RandomAccessFile*, GffEntry::Locus*, std::string, int, std::set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, bool, bool, bool, bool, bool)':
+../RI_Splidar.h:17: warning: 'RI_Splidar_REG::op' will be initialized after
+../RI_Splidar.h:20: warning:   base 'GenericSplidarOutputFormat'
+../RI_Splidar.h:20: warning:   when initialized here
+../StringUtil.h: In constructor 'buffer<T>::buffer(int) [with T = char]':
+../StringUtil.h:398:   instantiated from here
+../StringUtil.h:23: warning: 'buffer<char>::size' will be initialized after
+../StringUtil.h:22: warning:   'char* buffer<char>::data'
+../StringUtil.h:34: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = Position, K = std::vector<Position, std::allocator<Position> >, I = __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > >]':
+../KeyedPosition.h:660:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<Position, std::allocator<Position> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<Position, std::vector<Position, std::allocator<Position> >, __gnu_cxx::__normal_iterator<Position*, std::vector<Position, std::allocator<Position> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h: In constructor 'buffered_ofstream<T, K, I>::buffered_ofstream(std::string, bool, int, std::string) [with T = KeyedPosition, K = std::vector<KeyedPosition, std::allocator<KeyedPosition> >, I = __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > >]':
+../KeyedPosition.h:765:   instantiated from here
+../Commonf.h:361: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::threshold' will be initialized after
+../Commonf.h:360: warning:   'std::vector<KeyedPosition, std::allocator<KeyedPosition> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store'
+../Commonf.h:367: warning:   when initialized here
+../Commonf.h:360: warning: 'buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::store' will be initialized after
+../Commonf.h:358: warning:   'std::basic_string<char, std::char_traits<char>, std::allocator<char> > buffered_ofstream<KeyedPosition, std::vector<KeyedPosition, std::allocator<KeyedPosition> >, __gnu_cxx::__normal_iterator<KeyedPosition*, std::vector<KeyedPosition, std::allocator<KeyedPosition> > > >::endline'
+../Commonf.h:367: warning:   when initialized here
+/net/sugarman/scratch/awcheng/supergenius.root/lib/libpython2.7.a(posixmodule.o): In function `posix_tmpnam':
+/net/sugarman/scratch/awcheng/Apps.supergenius/Python-2.7/./Modules/posixmodule.c:7275: warning: the use of `tmpnam_r' is dangerous, better use `mkstemp'
+/net/sugarman/scratch/awcheng/supergenius.root/lib/libpython2.7.a(posixmodule.o): In function `posix_tempnam':
+/net/sugarman/scratch/awcheng/Apps.supergenius/Python-2.7/./Modules/posixmodule.c:7230: warning: the use of `tempnam' is dangerous, better use `mkstemp'

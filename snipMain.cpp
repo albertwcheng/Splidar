@@ -8,7 +8,7 @@
 #include "SplidarGraph.h"
 //#include "BayesPsi3UTR.h"
 #include "CollapseWig.h"
-#include "scanStatistics.h"
+//#include "scanStatistics.h"
 
 
 
@@ -553,7 +553,7 @@ int bill_collapseWig(int argc,const char** argv)
 }
 
 //PENDING: make generic or remove
-int test_ScanStat(int argc,const char ** argv)
+/*int test_ScanStat(int argc,const char ** argv)
 {
 /*	cerr<<float_approx(SS_Poisson_Prob_Approx3_3(4, 1, 10))<<endl;
 	cerr<<float_approx(::SS_Poisson_Prob_Naus_Approx(4, 1, 10))<<endl;
@@ -584,7 +584,7 @@ int test_ScanStat(int argc,const char ** argv)
 		cerr<<float_approx(::SS_Poisson_Prob_Naus_Approx(k, 1, 10))<<endl;
 	}*/
 	
-	cl_R window=StringUtil::atoi(argv[1]);
+/*	cl_R window=StringUtil::atoi(argv[1]);
 	cl_R uniqPos="2177505976";
 	cl_R uniqRead="14646824";
 	cl_R lambda=uniqRead/uniqPos;
@@ -609,7 +609,7 @@ int test_ScanStat(int argc,const char ** argv)
 
 
 	return 1;
-}
+}*/
 
 
 
