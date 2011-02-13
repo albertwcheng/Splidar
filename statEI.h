@@ -147,7 +147,7 @@ void splidar_calStatEIGeneric(
 
 	    map<string,vector<string> >::const_iterator genomeReadFilesPerChromI=genomeReadFiles->find(chr);
 
-		if(genomeReadFilesPerChromI==genomeReadFiles->end() || genomeReadFilesPerChromI->second.size()==0)
+		if(genomeReadFilesPerChromI==genomeReadFiles->end())// || genomeReadFilesPerChromI->second.size()==0)
 		{
 			cerr<<"genome read files for chromosome "<<chr<<" is not specified";
 			continue;

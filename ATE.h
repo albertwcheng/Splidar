@@ -116,7 +116,7 @@ void splidar_calATEGeneric
 
 	    map<string,vector<string> >::const_iterator genomeReadFilesPerChromI=genomeReadFiles->find(chr);
 
-		if(genomeReadFilesPerChromI==genomeReadFiles->end() || genomeReadFilesPerChromI->second.size()==0)
+		if(genomeReadFilesPerChromI==genomeReadFiles->end())// || genomeReadFilesPerChromI->second.size()==0)
 		{
 			cerr<<"genome read files for chromosome "<<chr<<" is not specified";
 			continue;
@@ -124,7 +124,7 @@ void splidar_calATEGeneric
 
 	     map<string,vector<string> >::const_iterator jnxReadFilesPerChromI=jnxReadFiles->find(chr);
 
-		if(jnxReadFilesPerChromI==jnxReadFiles->end() || jnxReadFilesPerChromI->second.size()==0)
+		if(jnxReadFilesPerChromI==jnxReadFiles->end())// || jnxReadFilesPerChromI->second.size()==0)
 		{
 			cerr<<"jnx read files for chromosome "<<chr<<" is not specified";
 			continue;
