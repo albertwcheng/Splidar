@@ -1160,11 +1160,12 @@ void GffEntry::Loader::loadSelexaMatches(string filename,int format)
 	
 	///////BAM FORMAT SUPPORT: BLOCK 1
 	samfile_t *samfp=NULL;
-	bam1_t *bamt=bam_init1();
+	bam1_t *bamt;//=bam_init1();
 	
 	
 	if(format==BAM_FORMAT)
-	{
+	{	
+		bamt=bam_init1();
 		//close file and open as bam instead
 		fil.close();
 		if((samfp=samopen(filename.c_str(),"rb",0))==0){
@@ -1250,6 +1251,7 @@ void GffEntry::Loader::loadSelexaMatches(string filename,int format)
 		
 		if(sm->gpos0<prevPos)
 		{
+			cerr<<"While loading SelexaMatch #"<<c<<":";
 			die("Selexa File Not Sorted, require a sorted file");
 		}
 		

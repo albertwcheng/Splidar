@@ -127,7 +127,7 @@ void splidar_calAEPGeneric
 		{
 			cerr<<"genome read files for chromosome "<<chr<<" is not specified";
 			//die("");
-			continue;
+			//continue;
 		}
 
 	     map<string,vector<string> >::const_iterator jnxReadFilesPerChromI=jnxReadFiles->find(chr);
@@ -136,7 +136,7 @@ void splidar_calAEPGeneric
 		{
 			cerr<<"jnx read files for chromosome "<<chr<<" is not specified";
 			//die("");
-			continue;
+			//continue;
 
 		}
 
