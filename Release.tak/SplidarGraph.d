@@ -1,8 +1,8 @@
 SplidarGraph.d SplidarGraph.o: ../SplidarGraph.cpp ../SplidarGraph.h \
- ../snipIncludes.h ../Debugger.h ../Commonf.h ../StringUtil.h \
- ../Nucleic.h ../GffEntry.h ../samtools-0.1.8/sam.h \
- ../samtools-0.1.8/bam.h ../samtools-0.1.8/bgzf.h ../NucleicBit.h \
- ../FastaFile.h ../KeyedPosition.h ../RandomAccessFile.h \
+ ../snipIncludes.h ../Debugger.h ../Commonf.h \
+ ../CppUtilClasses/StringUtil.h ../Nucleic.h ../GffEntry.h \
+ ../samtools-0.1.8/sam.h ../samtools-0.1.8/bam.h ../samtools-0.1.8/bgzf.h \
+ ../NucleicBit.h ../FastaFile.h ../KeyedPosition.h ../RandomAccessFile.h \
  ../ConservedBlock.h ../SpliceGraph.h ../snip.h ../Vector2Array.h \
  ../SuperConfigFile.h ../ConfigFile.h ../PyConfigFile.h \
  /lab/jaenisch_albert/include/python2.6/Python.h \
@@ -72,7 +72,7 @@ SplidarGraph.d SplidarGraph.o: ../SplidarGraph.cpp ../SplidarGraph.h \
 
 ../Commonf.h:
 
-../StringUtil.h:
+../CppUtilClasses/StringUtil.h:
 
 ../Nucleic.h:
 

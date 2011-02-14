@@ -1,6 +1,6 @@
 RandomAccessFile.d RandomAccessFile.o: ../RandomAccessFile.cpp \
- ../StringUtil.h ../RandomAccessFile.h
+ ../CppUtilClasses/StringUtil.h ../RandomAccessFile.h
 
-../StringUtil.h:
+../CppUtilClasses/StringUtil.h:
 
 ../RandomAccessFile.h:

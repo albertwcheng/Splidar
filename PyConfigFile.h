@@ -14,7 +14,7 @@
 #include <map>
 #include <vector>
 #include <set>
-#include "StringUtil.h"
+#include "CppUtilClasses/StringUtil.h"
 using namespace std;
 
 #define PYCONFIGFILE_TMP_VAR_NAME  "____TMP____XAXSDFSD"

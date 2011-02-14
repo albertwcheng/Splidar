@@ -21,7 +21,7 @@
 #define SUPERCONFIGFILE_H_
 
 #include "ConfigFile.h"
-#include "StringUtil.h"
+#include "CppUtilClasses/StringUtil.h"
 #include <list>
 #include <set>
 using namespace std;

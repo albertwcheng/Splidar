@@ -1,5 +1,5 @@
 GffEntry.d GffEntry.o: ../GffEntry.cpp ../snipIncludes.h ../Debugger.h \
- ../Commonf.h ../StringUtil.h ../Nucleic.h ../GffEntry.h \
+ ../Commonf.h ../CppUtilClasses/StringUtil.h ../Nucleic.h ../GffEntry.h \
  ../samtools-0.1.8/sam.h ../samtools-0.1.8/bam.h ../samtools-0.1.8/bgzf.h \
  ../NucleicBit.h ../FastaFile.h ../KeyedPosition.h ../RandomAccessFile.h \
  ../ConservedBlock.h ../SpliceGraph.h ../SplidarGraph.h ../AEP_Splidar.h \
@@ -69,7 +69,7 @@ GffEntry.d GffEntry.o: ../GffEntry.cpp ../snipIncludes.h ../Debugger.h \
 
 ../Commonf.h:
 
-../StringUtil.h:
+../CppUtilClasses/StringUtil.h:
 
 ../Nucleic.h:
 

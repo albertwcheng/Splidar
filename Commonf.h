@@ -4,7 +4,7 @@
 
 #include <limits.h>
 #include <limits>
-#include "StringUtil.h"
+#include "CppUtilClasses/StringUtil.h"
 #include "Nucleic.h"
 #include <sstream>
 #include <vector>

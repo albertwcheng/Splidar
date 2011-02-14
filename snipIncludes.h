@@ -46,7 +46,7 @@ class Splidar_OpFlag
 #include <list>
 #include <queue>
 #include "Commonf.h"
-#include "StringUtil.h"
+#include "CppUtilClasses/StringUtil.h"
 #include "GffEntry.h"
 #include "NucleicBit.h"
 #include "FastaFile.h"
